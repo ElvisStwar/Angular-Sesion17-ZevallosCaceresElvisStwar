@@ -12,6 +12,10 @@ import { DetallesComponent } from './detalles/detalles.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    ProductosComponent,
+    DetallesComponent
   ]
 })
 export class PagesModule { }

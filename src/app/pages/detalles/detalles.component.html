@@ -1,1 +1,31 @@
-<p>detalles works!</p>
+<div class="row m-5 justify-content-center">
+    <div class="col-7 border p-4 rounded">
+        <div  *ngFor="let datos of plantilla">
+            <div>
+                <h3>Producto Nº: {{datos.codigo}}</h3>
+            </div>
+            <hr>
+            <div>
+                <h4>Descripción:</h4>
+                <p>{{datos.descripcion}}</p>
+            </div>
+            <hr>
+            <div>
+                <h4>Precio de Venta:</h4>
+                <p>{{datos.precioV|currency:"USD"}}</p>
+            </div>
+            <hr>
+            <div>
+                <h4>Precio de Compra:</h4>
+                <p>{{datos.precioC|currency:"USD"}}</p>
+            </div>
+            <hr>
+            <div>
+                <h4>Existencia:</h4>
+                <p>{{datos.existencia}}</p>
+            </div>
+            <hr>
+        </div>
+
+    </div>
+</div>

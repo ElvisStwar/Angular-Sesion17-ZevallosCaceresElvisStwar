@@ -1,1 +1,30 @@
-<p>productos works!</p>
+<div class="m-5 border rounded-4 p-3">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">CÓDIGO</th>
+            <th scope="col">DECRIPCIÓN</th>
+            <th scope="col">PRECIO COMPRA</th>
+            <th scope="col">PRECIO VENTA</th>
+            <th scope="col">GANANCIA</th>
+            <th scope="col">EXISTENCIA</th>
+            <th scope="col">EDITAR</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let datos of dataServiceProductos.datosProductos">
+            <th scope="row">{{datos.id}}</th>
+            <td>{{datos.codigo}}</td>
+            <td>{{datos.descripcion}}</td>
+            <td>{{datos.precioC}}</td>
+            <td>{{datos.precioV}}</td>
+            <td>{{datos.ganancia}}</td>
+            <td>{{datos.existencia}}</td>
+            <td>
+                <a class="btn btn-primary" [routerLink]="['/detalles',datos.id]"><i class="bi bi-pencil-square"></i></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</div>

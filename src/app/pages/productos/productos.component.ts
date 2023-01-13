@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataProductosService } from 'src/app/servicios/data-productos.service';
 
 @Component({
   selector: 'app-productos',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./productos.component.css']
 })
 export class ProductosComponent {
+
+  constructor(public dataServiceProductos:DataProductosService){
+
+  }
 
 }

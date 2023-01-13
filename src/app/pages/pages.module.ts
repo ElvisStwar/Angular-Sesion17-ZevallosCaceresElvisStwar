@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProductosComponent } from './productos/productos.component';
 import { DetallesComponent } from './detalles/detalles.component';
+import { RouterLink } from '@angular/router';
 
 
 
@@ -11,7 +12,8 @@ import { DetallesComponent } from './detalles/detalles.component';
     DetallesComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterLink
   ],
   exports: [
     ProductosComponent,
